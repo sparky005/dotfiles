@@ -55,7 +55,7 @@ border-left-size = 0
 ;----------;
 
 bottom = true
-monitor = eDP-1
+monitor = ${env:MONITOR:}
 wm-restack = i3
 override-redirect = false
 
