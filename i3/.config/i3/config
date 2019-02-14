@@ -150,12 +150,23 @@ bindsym $mod+r mode "resize"
 #exec --no-startup-id wal -i /home/asadik/Pictures/forest-patrol.jpg -n --backend schemer2
 
 # abstract bg
-exec --no-startup-id feh --bg-fill /home/asadik/Pictures/Qotd9S5.jpg
-exec --no-startup-id wal -i /home/asadik/Pictures/Qotd9S5.jpg -n --backend haishoku
+#exec --no-startup-id feh --bg-fill /home/asadik/Pictures/Qotd9S5.jpg
+#exec --no-startup-id wal -i /home/asadik/Pictures/Qotd9S5.jpg -n --backend haishoku
 
 # cherry blossoms bg
 #exec --no-startup-id feh --bg-fill /home/asadik/Pictures/3zLCOx9.jpg
 #exec --no-startup-id wal -i /home/asadik/Pictures/3zLCOx9.jpg -n --backend colorz
+#
+# anime bg
+#exec --no-startup-id feh --bg-fill /home/asadik/Pictures/57033321_p0.jpg
+#exec --no-startup-id wal -i 57033321_p0.jpg -n --backend schemer2
+#
+# diff anime bg
+exec --no-startup-id feh --bg-fill /home/asadik/Pictures/d9SEb.png
+#exec --no-startup-id wal -i d9SEb.png -n --backend schemer2
+
+
+exec --no-startup-id wal --theme vscode
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -244,5 +255,5 @@ exec_always --no-startup-id $HOME/.config/redshift.sh
 
 assign [class="Signal"] 10
 assign [class="Slack"] 10
-exec slack
+#exec slack
 exec signal-desktop
