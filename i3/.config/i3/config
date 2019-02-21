@@ -255,3 +255,6 @@ assign [class="Signal"] 10
 assign [class="Slack"] 10
 #exec slack
 exec signal-desktop
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
