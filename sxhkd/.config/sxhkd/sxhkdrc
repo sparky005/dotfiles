@@ -26,7 +26,7 @@ super + alt + {q,r}
 alt + {_,shift + }w
 	bspc node -{c,k}
 
-# close and kill
+# close
 alt + shift + q
 	bspc node -c
 
@@ -126,3 +126,8 @@ alt + {Left,Down,Up,Right}
 
 super + l
     xflock4
+
+# increase / decrease gap
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))

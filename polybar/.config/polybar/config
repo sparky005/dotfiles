@@ -307,5 +307,12 @@ reverse-scroll = false
 ; containing 'code' in the label
 ; Default: false
 fuzzy-match = true
+format = <label-state> <label-mode>
+label-focused-underline = #ffffff
+label-mode-padding = 1
+label-focused-padding = 2
+label-unfocused-padding = 2
+label-urgent-padding = 2
+label-visible-padding = 2
 
 ; vim:ft=dosini
