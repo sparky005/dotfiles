@@ -9,8 +9,11 @@ alt + Return
 # fg: #d4d4d4
 # bg: #d7ba7d
 # program launcher
+#alt + @space
+	#j4-dmenu-desktop --dmenu='dmenu -i -nb "#d4d4d4" -nf "#d7ba7d" -sb "#d7ba7d" -sf "#d4d4d4" -fn "Monaco:bold:size=13"'
+
 alt + @space
-	j4-dmenu-desktop --dmenu='dmenu -i -nb "#d4d4d4" -nf "#d7ba7d" -sb "#d7ba7d" -sf "#d4d4d4" -fn "Monaco:bold:size=13"'
+    rofi -show drun
 
 # make sxhkd reload its configuration files:
 alt + Escape
@@ -77,8 +80,8 @@ alt + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-alt + {grave,Tab}
-	bspc {node,desktop} -f last
+#alt + {grave,Tab}
+#	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 alt + {o,i}
