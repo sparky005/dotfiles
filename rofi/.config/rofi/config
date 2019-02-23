@@ -1,0 +1,11 @@
+# Dark theme.
+#rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+# Light theme.
+rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+
+rofi.font: Monaco 35
+rofi.modi: drun,calc
+
+rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
+rofi.lines: 7
