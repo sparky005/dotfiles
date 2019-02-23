@@ -282,8 +282,6 @@ menu-2-1-exec = menu-open-0
 type = internal/bspwm
 
 ; Only show workspaces defined on the same output as the bar
-; NOTE: The bspwm and XRandR monitor names must match, which they do by default.
-; Default: true
 pin-workspaces = true
 
 ; Output mode flags after focused state label
@@ -305,13 +303,24 @@ reverse-scroll = false
 ; Default: false
 fuzzy-match = true
 format = <label-state> <label-mode>
-label-focused-underline = #ffffff
-label-mode-padding = 1
-label-focused-padding = 2
-label-unfocused-padding = 2
-label-urgent-padding = 2
-label-visible-padding = 2
-label-empty = %icon%
+#label-focused-underline = #ffffff
+#label-mode-padding = 1
+#label-focused-padding = 2
+#label-unfocused-padding = 2
+#label-urgent-padding = 2
+#label-visible-padding = 2
+#label-empty = %icon%
 #label-empty-foreground = #000
+
+label-focused-background = #88000000
+label-focused-underline= #ddd
+label-focused-padding = 2
+
+label-occupied-padding = 2
+
+label-urgent-padding = 2
+
+label-empty-foreground = #44ffffff
+label-empty-padding = 2
 
 ; vim:ft=dosini
