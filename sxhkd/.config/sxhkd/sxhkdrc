@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + Return
-    termite
+    kitty
 
 # fg: #d4d4d4
 # bg: #d7ba7d
