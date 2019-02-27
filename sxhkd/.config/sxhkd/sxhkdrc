@@ -56,8 +56,12 @@ alt + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
-alt + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
+alt + ctrl + {m,x,y,z,h}
+	bspc node -g {marked,locked,sticky,private,hidden}
+
+# unhide
+alt + ctrl + shift + h
+    bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off
 
 #
 # focus/swap
@@ -144,3 +148,7 @@ XF86AudioLowerVolume
     pactl set-sink-volume 0 -5%
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+
+# rotate
+alt + r
+    bspc node @/ -R 90
