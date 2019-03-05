@@ -56,8 +56,8 @@ alt + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
-alt + ctrl + {m,x,y,z,h}
-	bspc node -g {marked,locked,sticky,private,hidden}
+alt + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
 
 # unhide
 alt + ctrl + shift + h
