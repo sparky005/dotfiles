@@ -107,6 +107,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias open="xdg-open"
 eval "$(direnv hook zsh)"
 #setopt menu_complete
 setopt HIST_IGNORE_DUPS
