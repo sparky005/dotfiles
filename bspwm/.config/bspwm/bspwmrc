@@ -15,6 +15,8 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+# https://github.com/baskerville/bspwm/issues/655#issuecomment-323665841
+bspc rule -a Soffice state=tiled
 
 # pywal
 # source the colors.
