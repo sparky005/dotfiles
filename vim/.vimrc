@@ -191,5 +191,5 @@ let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_github=1
 let vim_markdown_preview_use_xdg_open=1
 
-" dart thingy
-"let dart_style_guide = 2
+let g:markdown_composer_autostart=0
+
