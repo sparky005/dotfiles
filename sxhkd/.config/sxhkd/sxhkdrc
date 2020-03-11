@@ -143,11 +143,17 @@ super + bracket{left,right}
 
 # Sound control for XPS
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
+    pactl set-sink-volume 0 +2%
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
+    pactl set-sink-volume 0 -2%
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+XF86AudioPlay
+    playerctl play-pause
+XF86AudioNext
+    playerctl next
+XF86AudioPrevious
+    playerctl previous
 
 # rotate
 alt + r
