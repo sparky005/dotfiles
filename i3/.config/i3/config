@@ -169,9 +169,17 @@ exec --no-startup-id wal --theme vscode
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Sound control for XPS
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+# use these for spotify et al
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+# use these for mpd. it's supposed to work with playerctl but didnt for me
+#bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+#bindsym XF86AudioNext exec --no-startup-id mpc next
+#bindsym XF86AudioPrev exec --no-startup-id mpc cdprev
 
 # Create Log out, Reboot, Poweroff bindings
 mode "Exit (L)ogout, (R)eboot, (P)oweroff" {

@@ -1,4 +1,4 @@
 [options]
-font = Monaco 15
+font = Hack Regular 15
 scrollback_lines = 10000
 background = rgba(63, 63, 63, 0.8)
