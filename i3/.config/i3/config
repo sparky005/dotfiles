@@ -251,7 +251,9 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 client.background       $bg
 
 # PROTIP: You can also dynamically set dmenu's colors this way:
-bindsym $mod+space exec i3-dmenu-desktop --dmenu='dmenu -i -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg" -fn "Monaco:bold:size=13"'
+#bindsym $mod+space exec i3-dmenu-desktop --dmenu='dmenu -i -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg" -fn "Monaco:bold:size=13"'
+# replacing above with below
+bindsym $mod+space exec --no-startup-id rofi -show drun
 
 exec --no-startup-id compton --config ~/.compton -b
 #exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
@@ -264,3 +266,4 @@ assign [class="Slack"] 10
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
