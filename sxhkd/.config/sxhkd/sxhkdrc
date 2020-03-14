@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + Return
-    kitty
+    termite
 
 # fg: #d4d4d4
 # bg: #d7ba7d
@@ -149,11 +149,14 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute 0 toggle
 XF86AudioPlay
-    playerctl play-pause
+    mpc toggle
+    #playerctl play-pause
 XF86AudioNext
-    playerctl next
-XF86AudioPrevious
-    playerctl previous
+    mpc next
+    #playerctl next
+XF86AudioPrev
+    mpc cdprev
+    #playerctl previous
 
 # rotate
 alt + r
