@@ -1,0 +1,21 @@
+urls-source "inoreader"
+inoreader-login "sparky.005@gmail.com"
+inoreader-password "7Opn^^zvMSKRk9GbF7^P"
+inoreader-flag-star "b"
+bind-key j down
+bind-key k up
+auto-reload yes
+download-full-page yes
+refresh-on-startup yes
+reload-threads 6
+# unbind-key q
+# bind-key q hard-quit
+# bind-key h quit
+browser w3m
+articlelist-format  "%f %D %?T?|%-17T|  ?%t"
+feedlist-format "%n %11u %t"
+color listfocus default default standout
+color listfocus_unread default default standout bold
+macro g set browser "google-chrome-stable %U"; open-in-browser ; set browser w3m
+max-items 10000
+bookmark-cmd "/home/asadik/.newsboat/send-to-pocket.sh"
