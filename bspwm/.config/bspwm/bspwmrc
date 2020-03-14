@@ -37,7 +37,7 @@ bspc config presel_feedback_color "$color1"
 #assign [class="Signal"] 10
 #assign [class="Slack"] 10
 #exec slack
-bspc rule -a Signal desktop=^10 follow=off
+#bspc rule -a Signal desktop=^10 follow=off
 
 function run {
   if ! pgrep $1 ;
@@ -46,7 +46,6 @@ function run {
   fi
 }
 
-run signal-desktop
 run feh --bg-fill /home/asadik/Pictures/d9SEb.png
 run wal --theme vscode
 run compton --config /home/asadik/.compton -b

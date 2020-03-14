@@ -254,4 +254,3 @@ exec_always --no-startup-id $HOME/.config/redshift.sh
 assign [class="Signal"] 10
 assign [class="Slack"] 10
 #exec slack
-exec signal-desktop
