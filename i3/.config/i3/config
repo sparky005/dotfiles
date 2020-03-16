@@ -218,7 +218,7 @@ bindsym $mod+Shift+Control+9 move container to workspace 19
 bindsym $mod+Shift+Control+0 move container to workspace 20
 
 #new_window 1pixel # deprecated
-default_border pixel 1
+default_border pixel 0
 
 bindsym Mod4+l exec xflock4
 
