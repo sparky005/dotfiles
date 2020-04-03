@@ -159,5 +159,5 @@ prompt_dir () {
 }
 
 # pywal colors based on current wallpaper
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+#(cat ~/.cache/wal/sequences &)
+#source ~/.cache/wal/colors-tty.sh

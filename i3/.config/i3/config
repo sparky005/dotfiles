@@ -30,7 +30,8 @@ font pango:monospace 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+#bindsym $mod+Return exec termite
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -169,8 +170,8 @@ exec --no-startup-id wal --theme vscode
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Sound control for XPS
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 # use these for spotify et al
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
