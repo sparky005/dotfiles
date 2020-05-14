@@ -162,7 +162,8 @@ bindsym $mod+r mode "resize"
 #
 # diff anime bg
 #exec --no-startup-id feh --bg-fill /home/asadik/Pictures/d9SEb.png
-exec --no-startup-id feh --bg-fill /home/asadik/Pictures/IMG_0023.JPG
+#exec --no-startup-id feh --bg-fill /home/asadik/Pictures/IMG_0023.JPG
+exec --no-startup-id feh --bg-fill /home/asadik/Pictures/IMG_2251.JPG
 #exec --no-startup-id wal -i d9SEb.png -n --backend schemer2
 
 
