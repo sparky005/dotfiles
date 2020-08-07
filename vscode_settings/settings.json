@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Mellow (rainglow)",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "workbench.sideBar.location": "right",
+    "vim.statusBarColorControl": false,
+    "editor.acceptSuggestionOnEnter": "smart"
+}
